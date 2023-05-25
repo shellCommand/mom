@@ -1,0 +1,2 @@
+supabaseUrl = 'https://midjkzsugjmjeummrcoy.supabase.co'
+supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1pZGprenN1Z2ptamV1bW1yY295Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODQ4ODM4NDEsImV4cCI6MjAwMDQ1OTg0MX0.Wwiixxief9NOzFTzlG7urVl6tzQ0ds7H6LMJWPmfGEU'
