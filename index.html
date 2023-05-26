@@ -51,14 +51,14 @@
             <div class="row">
               <div class="col-sm-2 avatar-container">
                 <img class="mr-3" src="./images/blue.jpg" style="width:50px; height:50px;">
-                <p class="avatar-username">${e.username}</p>
+                <p class="avatar-username">${DOMPurify.sanitize(e.username)}</p>
               </div>
               <div class="col-sm-10">
-                <p>${e.content}</p>
+                <p>${DOMPurify.sanitize(e.content)}</p>
               </div>
             </div>
             <div class="row">
-              <p class="col-sm-12 timestamp">${e.created_at}</p>
+              <p class="col-sm-12 timestamp">${DOMPurify.sanitize(e.created_at)}</p>
             </div>
           </div>`
           messages.append(element)
@@ -120,6 +120,6 @@
     init()
   </script>
   <script src="app.js"></script>
-  <script>src="https://cdn.jsdelivr.net/npm/dompurify@3.0.3/dist/purify.min.js"</script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.3/dist/purify.min.js"></script>
   </body>
 </html>
