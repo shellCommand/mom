@@ -41,7 +41,7 @@
           .from('messages')
           .select('*')
           console.log(messages)
-          messages.forEach(addMessageToPage) 
+          messages.forEach(addMessageToPage)
       }
 
 
@@ -50,7 +50,7 @@
 
       const addMessageToPage = () => {
       const messagesElement = document.createElement('li')
-        messagesElement.classList.add(['card', 'm-2'])
+        messagesElement.classList.add('card', 'm-2')
         messagesElement.innerHTML = `
         <div class="card-body">
           <div class="row">
