@@ -37,7 +37,7 @@
 
     const init = async () => {
       const { data: messages, error } = await supabase
-        .from('messages')
+        .from('mom&me')
         .select('*')
         console.log(messages)
         messages.forEach((e) => {
@@ -84,7 +84,7 @@
         content : content.value
       }
       supabase
-       .from('messages')
+       .from('mom&me')
        .insert([
          message,
        ]).then(() => {
@@ -95,7 +95,7 @@
         console.log(message)
 
         supabase
-        .from('messages')
+        .from('mom&me')
         .on('INSERT', (message) => {
           console.log('Message received!', message)
         })
@@ -111,7 +111,7 @@
 
 
     // supabase
-    //   .from('messages')
+    //   .from('mom&me')
     //   .on('INSERT', (message) => {
     //     console.log('Message received', message)
     //   })
