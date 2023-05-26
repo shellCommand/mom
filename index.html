@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container main area">
       <ul class="list-unstyled" id="messages">
       </ul>
+      <form class="form ">
+        <h1>THIS IS THE FORM</h1>
+      </form>
     </div>
   <script type="module">
 
@@ -49,8 +52,19 @@
             </div>
           </div>`
           messages.append(element)
+          setTimeout(() => {
+            element.scrollIntoView({ behavior: 'smooth' })
+          }, 300)
       })
+
+
     }
+    // supabase
+    //   .from('messages')
+    //   .on('INSERT', (message) => {
+    //     console.log('Message received', message)
+    //   })
+    //   .subscribe()
 
     init()
   </script>
