@@ -93,10 +93,17 @@
          username.content = ''
        })
         console.log(message)
-        document.getElementById('#username').value = ''
-        document.getElementById('#content').value = ''
+
+        supabase
+        .from('messages')
+        .on('INSERT', (message) => {
+          console.log('Message received!', message)
+        })
+        .subscribe()
 
       })
+      document.querySelector('#username').value = ''
+      document.querySelector('#content').value = ''
     }
 
 
